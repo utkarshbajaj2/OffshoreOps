@@ -1,0 +1,120 @@
+/* General body styling */
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Title Styling */
+h2 {
+  color: #4a4a4a;
+  font-size: 2.5rem;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Table Styling */
+table {
+  padding-right: 10px;
+  margin-left: 300px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+td {
+  background-color: #ffffff;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Styling for buttons */
+button {
+  padding: 12px 20px;
+  margin-right: 100px;
+  padding-right: 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 320px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled button state */
+button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+/* Styling for action buttons container */
+td button {
+  margin-top: 10px;
+}
+
+/* Aligning buttons to the bottom of the page */
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+}
+
+.buttons-container button {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Responsive design: Ensure good visibility on smaller screens */
+@media (max-width: 768px) {
+  table {
+      width: 95%;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  button {
+      max-width: 100%;
+  }
+}

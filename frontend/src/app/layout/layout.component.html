@@ -1,0 +1,52 @@
+
+
+<div class="layout-container">
+    <h2>ADMIN    Dashboard</h2>
+
+
+    
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee id</th>
+                <th> Name</th>
+                <th>Assigned ODC</th>
+                <th>Role</th>
+                <th>Requested ODC</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.emp_id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.odc}}</td>
+                <td>{{employee.role}}</td>
+                <td>{{employee.request}}</td>
+                <td><button class="me-1" (click)="deleteEmployee(employee)">Delete</button>
+                    <button style="margin-top: 40px;" (click)="onUpdate(employee)" [disabled]= "isDisabled(employee)">Update</button>
+                   
+                </td>
+            </tr>
+           
+
+            
+        </tbody>
+    </table>
+
+    <td style=" padding-left: 100px;display:flex; justify-content: center;">
+        <button (click)="onLogOut()">Log out</button>
+    </td>
+
+
+    <div *ngIf="message" class="popup">
+        <p><strong>Message :</strong>{{message}}</p>
+        <p><strong>Employee ID :</strong>{{emp_details}}</p>
+
+        <button (click)="message=null">Close</button>
+    </div>
+
+</div>

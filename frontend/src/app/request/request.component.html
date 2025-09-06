@@ -1,0 +1,21 @@
+
+<h2>Update request for Employee ID :{{emp_id}}</h2>
+
+<form (ngSubmit)="onSubmit()">
+
+    <label for ="request">REQUEST:</label>
+
+    
+        <select id="request" name="request" [(ngModel)]="request" request>
+    <option value="L1">L1</option>
+    <option value="L2">L2</option>
+    <option value="L3">L3</option>
+    <option value="M1">M1</option>
+    <option value="M2">M2</option>
+    <option value="M3">M3</option>
+    <option value="U1">U1</option>
+    <option value="U2">U2</option>
+    <option value="U3">U3</option>
+</select>
+    <button type="submit">Update ODC</button>
+</form>

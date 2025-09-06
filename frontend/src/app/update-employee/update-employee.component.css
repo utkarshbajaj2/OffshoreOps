@@ -1,0 +1,118 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    background-color: #eef2f6; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Form Container */
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Elements */
+  label {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+  }
+  
+  /* Button Styles */
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Success Message */
+  .success-message {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .success-message.show {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }

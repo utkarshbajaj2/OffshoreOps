@@ -1,0 +1,160 @@
+
+
+
+   /* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Layout Container */
+  .layout-container {
+    background-color: #f4f7fa;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(59, 15, 15, 0.477);
+    background-color: #fff;
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Button Styling */
+  .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #7617a5;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  tbody tr:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  button {
+    background-color: #9215b8;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ef4b39;
+    transform: scale(1.1);
+  }
+
+  button:disabled:hover{
+    background-color: #ccc;
+    transform: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .layout-container {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      padding: 8px 10px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px 18px;
+    }
+
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    
+    .popup-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    button {
+ 
+     margin-top: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    .close-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #ddd;
+    }
+  }
+  
+
